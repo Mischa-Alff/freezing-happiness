@@ -10,12 +10,12 @@ manager = Manager(app)
 
 # Turn on debugger by default and reloader
 manager.add_command(
-    "runserver", Server(
+    'runserver', Server(
         use_debugger=True,
         use_reloader=True,
         host='0.0.0.0'
     )
 )
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     manager.run()
